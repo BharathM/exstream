@@ -31,7 +31,7 @@ chmod 777 $filename_with_path
 
 for (( ; ; ))
     do
-    command=`nfsiostat 10 2`
+    command=`nfsiostat 5 2`
     read -d '' output << EOF
     ${command}
 EOF
